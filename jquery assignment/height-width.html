@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height-width jquery</title>
+</head>
+<style>
+    .box{
+        height: 100px;
+        width: 300px;
+        background-color: black;
+    }
+</style>
+<body>
+    <button class="know-height-width">know-height-width</button>
+    <button class="set-height-width">set-height-width</button>
+
+    <div class="box">
+    </div>      
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.know-height-width').click(function(){
+                alert('box-heigt and width are respectively:'+$('.box').height()+' and '+$('.box').width());    
+            });
+            $('.set-height-width').click(function(){                
+                $('.box').height(300);
+                $('.box').width(500);
+            });
+            
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+1. work with a combination of bootstrap and custom
+2. ignore the black strip on the banner
+3. Below the banner there are 3 boxes, first is showing hover effect
+4. use font awesome for icons
+5. Popular Campaigns section > its a slider, use https://kenwheeler.github.io/slick/, first box showing hover effect
+6. Meet Volunteers section > first box showing hover effect
+7. color codes > #ea062b, #111, #666
+8. font family https://fonts.google.com/specimen/Jost
+9.font awsome icon

@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prev-next jquery</title>
+</head>
+<style>
+    .box{
+        position: relative;
+        height: 150px;
+        width: 150px;
+        background-color: yellow;
+    }
+</style>
+<body>
+    <ul>
+        <li >Home</li>
+        <li class="start">Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+    </ul>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var curr=$('.start');
+            var prev=curr.prev();
+
+            curr.hover(
+                function(){
+                    prev.css({'color':'blue'});
+                    curr.css({'color':'skyblue'});
+                    curr.nextAll().css({'color':'green'});
+                },
+                function(){
+                    prev.css({'color':'black'});
+                    curr.css({'color':'black'});
+                    curr.next().css({'color':'black'});
+                }
+            );           
+        });
+    </script>
+</body>
+
+</html>

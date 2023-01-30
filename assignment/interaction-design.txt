@@ -1,0 +1,38 @@
+
+1. Used Header, Section and Div 
+2. Make Container max-width: 1180px;
+
+3. Use Google Font Roboto
+https://fonts.google.com/specimen/Roboto
+
+
+
+4. Example Section How to create HTML Good structure =>
+<section class="services-wrap">
+  <div class="container">
+    <div class="services-inner">
+
+      <div class="services-item">
+        <div class="services-item-box">
+          <p>test 1</p>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-item-box">
+          <p>test 1</p>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-item-box">
+          <p>test 1</p>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-item-box">
+          <p>test 1</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

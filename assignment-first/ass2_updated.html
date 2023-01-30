@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{ 
+            background-color: aqua;
+            padding: 10 10 10 10;
+            margin: 10 auto 10;
+            height: 360px;
+        }
+        header{
+            max-width: 100%;
+            height: 50px;
+            display: block;
+            background-color: rgb(176, 127, 255);
+            text-align: center;
+            padding: 10 10 10;
+            margin: 10 auto;
+        }
+        header h3{
+            margin: 0;
+            padding: 10px;
+
+        }
+        .main_area{
+            display: block;
+            margin: 10 auto;
+        }
+        .sidebar{
+            width: 20%;
+            padding: 0 10 0 0;
+            display:block;
+            float: left;
+            margin: 0 0 10;
+            height: 210px;
+            text-align: center;
+        }
+        .sidebox{
+            width: 100%;
+            background-color: yellow;
+            height: 100%;
+            text-align: center;
+        } 
+        .main-extra{
+            width: 80%;
+            padding: 0 0 0 10;  
+            display: inline-block;
+            
+        }
+        .main{
+            background-color: rgb(255, 99, 47);
+            max-width: 100%;
+            margin: 0 0 10;
+            height: 150px;
+            padding: 10 10 10;
+            text-align: center;
+        }
+        .extra{
+            background-color: rgb(218, 21, 152);
+            height: 50px;
+            max-width: 100%;
+            padding: 10 10 10;
+            text-align: center;
+        } 
+        footer{
+            width: 100%;
+            height: 50px;
+            display: block;
+            background-color: rgb(144, 255, 127);
+            text-align: center;
+            padding: 10 10 10;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><h3>HEADER</h3></header>
+        <div class="main_area">
+            <div class="sidebar">
+                <div class="sidebox">SIDEBAR</div>
+            </div>
+            <div class="main-extra">
+                <div class="main">MAIN CONTENT</div>
+                <div class="extra">EXTRA CONTENT</div>
+            </div>
+        </div>
+        <footer>FOOTER</footer>
+    </div>
+
+</body>
+</html>

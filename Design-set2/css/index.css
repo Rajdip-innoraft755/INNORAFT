@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 0 15px;
+}
+.rev{
+    filter: invert();
+}
+/*header start*/
+header {
+    background-color: rgb(60, 235, 235);
+}
+
+.head-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 10 0;
+    color: white;
+}
+
+.head-left {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
+}
+.time,.call img{
+    vertical-align: middle;
+}
+.time,.call{
+    display: flex;
+    column-gap: 10px;
+    /* width: 50%; */
+    align-items: center;
+}
+
+.head-right ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.head-right ul li {
+    padding: 7px 10px;
+}
+
+.head-right ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+ul li img {
+    width: 17px;
+}
+
+.want-to {
+    background-color: orange;
+    border-radius: 20px;
+    margin-right: 20px;
+
+}
+
+/*header end*/
+
+/*banner start*/
+.banner-wrap {
+    padding: 10 50;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:bold;
+    color: black;
+}
+
+.search {
+    background-color: #78757521;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 150px;
+}
+
+.search a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:bold;
+    color: black;
+    padding-left: 5px;
+}
+
+.search img {
+    width: 15px;
+    margin: 0px 10px;
+}
+
+.logo img {
+    width: 140px;
+}
+
+/*banner end*/
+
+/*middle start*/
+.middle {
+    background-image: url(../Images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    
+}
+.text-box {
+    position: relative;
+    top: 25px;
+    text-align: center;
+    color: #f9f4f4;
+}
+
+.text-box h1 {
+    font-size: 50px;
+    margin: 0 30%;
+}
+
+.text-box h6 {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.images {
+    position: relative;
+    top: 60px;
+    display: flex;    
+    justify-content: center;
+}
+
+.break-line {
+    height: 150px;
+    width: 5px;
+    background-color: #f9f4f4;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+
+.images img{
+    padding: 20px;
+}
+.overlay button img{
+    padding: 0;
+    width: 21px;
+    margin: 0 20;
+}
+.appoinment{
+    background-color: orangered;
+    width: 350px;
+    height: auto;
+    border-radius: 30px;
+    border-color: snow;
+    padding: 20px;
+}
+.appoinment a{
+    text-decoration: none;
+    color: #f9f4f4;
+    font-size: 20px;
+    font-weight:bold;
+    
+}
+.button-images{
+    width: 10px;
+}
+.social-handles{
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    padding: 0 0;
+    justify-content: center;  
+}
+.social-handles img{
+    width: 15px;
+    padding: 10 0;
+}
+
+.find-doctor{
+    position: relative;
+    max-width: 50%;
+    background-color: white;
+    left: 25%;
+    
+    bottom: 50px;
+    
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 1px 1px rgb(169 165 165);
+}
+
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+    margin: 15;
+}
+.upper p{
+    color:orangered;
+    font-size: 15px;
+    font-weight:bold;
+    margin: 0;
+}
+.upper a{
+    color: green;
+    margin: 0;   
+}
+.lower
+{
+    display: flex;
+    justify-content: space-around;   
+}
+.lower div{
+    padding: 10px;
+    width: 20%;
+    margin: 0 10;
+    height: 50px;
+}
+.lower div p{
+    margin: 5 10;
+    font-size: 15px;
+    font-weight:bold;
+}
+.last{
+    background-color: orangered;
+}
+.lower select{
+    width: 200px;
+    border-radius: 20px;
+    background-color: #8080803d;
+    padding: 10px 5px;
+    font-size: 15px;
+
+}
+/*middle end*/

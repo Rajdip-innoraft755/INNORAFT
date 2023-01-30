@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append-prepend jquery</title>
+</head>
+
+<body>
+    <div>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, totam. Porro repellat harum optio dignissimos,
+            nihil perspiciatis quis rem consectetur dolores. Itaque tenetur corporis, non ea quis in dignissimos. Quod!
+        </p>
+    </div>   
+    <button class="append">append</button>
+    <button class="prepend">prepend</button>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.append').click(function(){
+                $('p').append('<b>Appended Text</b>');
+            });
+            $('.prepend').click(function(){
+                $('p').prepend('<b>Prepended Text</b>');
+            });
+        })
+    </script>
+</body>
+
+</html>

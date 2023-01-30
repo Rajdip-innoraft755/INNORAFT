@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop up</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 1180px;
+        margin: 0 auto;
+    }
+    .wrapper{
+        display: flex;
+        align-items: center;
+    }
+    .pop-up{
+        position: absolute;
+        top: 0px;
+        width: 50%;
+        background-color: aqua;
+        display: none;
+    }
+</style>
+<body>
+    <section>
+        <div class="container">
+            <div class="wrapper">
+                <div class="box">
+                    <h1>heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae praesentium eveniet nesciunt
+                        vero a tenetur qui maxime facere nostrum, sed possimus consequuntur voluptatibus nisi. Quos
+                        voluptate id qui et pariatur!
+                    </p>
+                    <button class="read-more">read-more</button>
+                </div>
+
+                <div class="box">
+                    <h1>heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae praesentium eveniet nesciunt
+                        vero a tenetur qui maxime facere nostrum, sed possimus consequuntur voluptatibus nisi. Quos
+                        voluptate id qui et pariatur!
+                    </p>
+                    <button class="read-more">read-more</button>
+                </div>
+
+                <div class="box">
+                    <h1>heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae praesentium eveniet nesciunt
+                        vero a tenetur qui maxime facere nostrum, sed possimus consequuntur voluptatibus nisi. Quos
+                        voluptate id qui et pariatur!
+                    </p>
+                    <button class="read-more">read-more</button>
+                </div>
+            </div>
+            <div class="pop-up">
+                <h1>heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, magnam nemo! Officiis qui veritatis
+                    unde laboriosam maiores incidunt, voluptatibus deserunt laudantium velit labore voluptas et alias
+                    molestias atque minus quae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, magnam
+                    nemo! Officiis qui veritatis
+                    unde laboriosam maiores incidunt, voluptatibus deserunt laudantium velit labore voluptas et alias
+                    molestias atque minus quae.
+                </p>
+                <button class="close">close</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.read-more').click(function(){
+                $('.pop-up').slideDown('slow');
+            })
+            $('.close').click(function(){
+                $('.pop-up').slideUp('slow');
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offsetjquery</title>
+</head>
+<style>
+    .box{
+        height: 100px;
+        width: 300px;
+        background-color: black;
+        position: relative;
+        top: 10;
+        left: 100;
+    }
+</style>
+<body>
+    <button class="know-height-width">know-height-width</button>
+    <button class="set-height-width">set-height-width</button>
+
+    <div class="box">
+    </div>      
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            alert('offset of the box: top = '+$('.box').offset().top+' and left = '+$('.box').offset().left);            
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            margin:20px;
+        }
+        header{
+            display: block;
+            background-color: rgb(216, 213, 213);
+            height:100px;
+            padding: 20px auto;
+        }
+        .navbar{
+            margin: 0 100px;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .logo{
+           
+            padding-top: 10px;
+            
+        }
+        .image{
+            height:70px;
+            border-radius: 50%;
+        }
+        .menu{
+            
+            padding-top:20px;
+        }
+        ul{
+            list-style: none;
+            margin: 10px 20px;
+            
+        }
+        ul li{
+            display: inline-block;
+            padding: 10px;
+            
+        }
+        ul li a{
+            color: rgb(47, 15, 227);
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .active{
+            background-color: black;
+            color: white;
+        }
+        .banner{
+            height: 250px;
+            background-color: rgb(32, 132, 203);
+            padding: 80px 80px;
+            text-align: center;
+            font-size:80px;
+            color: white;
+            font-weight: bolder;
+        }
+        .middle{
+            margin: 20px 50px 10px;
+        }
+        .left{
+            display: inline-block;
+            float: left;
+            width: 50%;
+        }
+        .left-back{
+            display: inline-block;
+            float: left;
+            background-color: #de9d63;
+            height: 450px;
+            width: 95%;
+        }
+        .left-front{
+            display: inline-block;
+            background-color: #44095f;
+            height: 350px;
+            width: 15%;
+            position: absolute;
+            left: 40px;
+            top: 450px;
+        }
+        .right{
+            display: inline-block;
+            width: 50%;
+        }
+        .right-up {
+            width: 100%;
+            background-color: orange;
+            display: inline-block;
+            float: right;
+            height: 250px;
+            
+        }
+        .right-down{
+            width: 100%;
+            background-color: rgb(17, 158, 12);
+            display: inline-block;
+            float: right;
+            height: 180px;
+            margin-top: 20px;
+            
+        }
+        footer{
+            display: block;
+            background-color: rgb(32, 132, 203);
+            height:100px;
+            padding: 10px;
+            float: left;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <img class="image" src="https://media-exp1.licdn.com/dms/image/C560BAQEkzAo0Rox1KQ/company-logo_200_200/0/1519884371549?e=2147483647&v=beta&t=gC2_tHGf2R1jNk34Z535ON8lcNZU1kBfL7KbcqWPPjo"
+                        alt="logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a class="active" href="#">HOME</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">PROFILE</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="banner">BANNER</div>
+            <div class="middle">
+                <div class="left">
+                    <div class="left-back"></div>
+                    <div class="left-front"></div>
+                </div>
+                <div class="right">
+                    <div class="right-up"></div>
+                    <div class="right-down"></div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
