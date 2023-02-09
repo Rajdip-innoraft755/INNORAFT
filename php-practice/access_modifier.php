@@ -23,8 +23,8 @@ class Childclass extends Fruit{
     function __construct(){
         $this->set_color('red');
         echo $this->color ."\n";
-        $this->set_weight(10);
-        echo $this->weight ."\n";
+        // $this->set_weight(10);
+        // echo $this->weight ."\n";
     }
     
 }
